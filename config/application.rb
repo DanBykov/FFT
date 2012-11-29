@@ -55,9 +55,28 @@ module Fft
 
     # Enable the asset pipeline
     config.assets.enabled = true
-    #config.assets.path << Rails.root.join("app", "assets", "flash")
+
+    # App/assets/images/subfolders
+    config.assets.paths << Rails.root.join("app", "assets", "images", "action")
+    config.assets.paths << Rails.root.join("app", "assets", "images", "adventure")
+    config.assets.paths << Rails.root.join("app", "assets", "images", "misc")
+    config.assets.paths << Rails.root.join("app", "assets", "images", "music")
+    config.assets.paths << Rails.root.join("app", "assets", "images", "puzzle")
+    config.assets.paths << Rails.root.join("app", "assets", "images", "shooting")
+    config.assets.paths << Rails.root.join("app", "assets", "images", "sports")
+    config.assets.paths << Rails.root.join("app", "assets", "images", "strategy")
+
+    # App/assets/flash/subfolders
+    config.assets.paths << Rails.root.join("app", "assets", "flash", "action")
+    config.assets.paths << Rails.root.join("app", "assets", "flash", "adventure")
+    config.assets.paths << Rails.root.join("app", "assets", "flash", "misc")
+    config.assets.paths << Rails.root.join("app", "assets", "flash", "music")
+    config.assets.paths << Rails.root.join("app", "assets", "flash", "puzzle")
+    config.assets.paths << Rails.root.join("app", "assets", "flash", "shooting")
+    config.assets.paths << Rails.root.join("app", "assets", "flash", "sports")
+    config.assets.paths << Rails.root.join("app", "assets", "flash", "strategy")
 
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.0'
+    config.assets.version = '1.1'
   end
 end

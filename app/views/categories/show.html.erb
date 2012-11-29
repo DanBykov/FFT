@@ -1,0 +1,25 @@
+<p>
+  <b>Name:</b>	
+  <%= @category.name %>
+</p> 
+
+
+<% if @category.games.any? %>
+	<h4>Games (<%= @category.games.count %>)</h3>
+	<br />
+		
+	<ul class = "gamelist">	
+	<% @category.games.each do |game| %>
+		<li>
+			<div class="li-img"><%= link_to image_tag(game.name + ".jpg"), Game.find_by_name(game.name) %></div>
+			<div class="li-text">
+				<h4 class="li-head"><%= link_to game.name, Game.find_by_name(game.name) %></h4>
+				Plays:
+				<br />
+				Rating:
+			</div>
+		</li>
+	<% end %>
+	</ul>
+<% end %>
+

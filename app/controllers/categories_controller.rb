@@ -1,25 +1,20 @@
 class CategoriesController < ApplicationController
-  def action
-  end
+  def index
+    @categories = Category.all
 
-  def adventure
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @categories }
+    end
   end
-
-  def misc
-  end
-
-  def music
-  end
-
-  def puzzle
-  end
-
-  def shooting
-  end
-
-  def sports
-  end
-
-  def strategy
+  
+  def show
+    @category = Category.find(params[:id])
+    @categories = Category.all
+        
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @category }
+    end
   end
 end

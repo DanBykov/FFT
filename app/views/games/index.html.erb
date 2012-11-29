@@ -1,0 +1,9 @@
+<h1>Listing games</h1>
+
+<table>
+<% @games.each do |game| %>
+  <tr>
+    <td><%= game.name %></td>
+<% end %>
+</table>
+

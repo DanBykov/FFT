@@ -1,2 +1,4 @@
 <h1>Categories#sports</h1>
 <p>Find me in app/views/categories/sports.html.erb</p>
+	<%= link_to image_tag(@category.games.first.name + ".jpg"), Game.find_by_name(@category.games.first.name) %>
+	<%= image_tag("four-second-frenzy-14.jpg") %>
