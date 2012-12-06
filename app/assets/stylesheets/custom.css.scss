@@ -133,6 +133,7 @@ footer {
   a {
     color: $black;
     &:hover { 
+      text-decoration: none;
       color: $green;
     }
   }
@@ -167,4 +168,32 @@ footer {
     display: inline;
     width: 50%;
   }
+}
+
+/* Comments */
+
+.comments {
+  list-style: none;
+  margin-top: 10px;
+  li {
+    padding: 8px;
+    margin-top: 3px;
+    background-color: #F0FFFF;
+    &:hover {
+       background-color: #E0EEEE;
+    }
+  }
+}
+
+.content {
+  display: block;
+}
+
+.timestamp {
+  color: $grayDarker;
+  padding-bottom: 5px;
+}
+
+.field {
+  margin-top: 10px;
 }

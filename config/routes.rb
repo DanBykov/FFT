@@ -1,6 +1,7 @@
 Fft::Application.routes.draw do
   devise_for :users
   resources :games, :categories
+  resources :comments, only: [:create, :destroy]
   
   root to: "static_pages#home"
   

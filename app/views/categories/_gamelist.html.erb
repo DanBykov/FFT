@@ -1,0 +1,11 @@
+<li>
+	<div class="li-img">
+		<%= link_to image_tag(game.name + ".jpg"), Game.find_by_name(game.name) %>
+	</div>
+	<div class="li-text">
+		<h4 class="li-head"><%= link_to game.name, Game.find_by_name(game.name) %></h4>
+		Plays:
+		<br />
+		Rating:
+	</div>
+</li>

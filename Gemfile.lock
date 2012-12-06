@@ -117,7 +117,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (= 2.0.4)
-  bootstrap-will_paginate
+  bootstrap-will_paginate (= 0.0.6)
   coffee-rails (~> 3.2.1)
   devise (= 2.1.2)
   jquery-rails

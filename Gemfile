@@ -5,7 +5,7 @@ gem 'sqlite3'
 gem 'bootstrap-sass', '2.0.4'
 gem 'devise', '2.1.2'
 gem 'will_paginate', '3.0.3'
-gem 'bootstrap-will_paginate'
+gem 'bootstrap-will_paginate', '0.0.6'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

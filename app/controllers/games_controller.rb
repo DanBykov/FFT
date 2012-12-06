@@ -15,7 +15,8 @@ class GamesController < ApplicationController
   def show
     @game = Game.find(params[:id])
     @games = Game.all
-     
+    @comment = current_user.comments.build 
+    @comments = @game.comments.paginate(page: params[:page], per_page: 8)
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @game }
