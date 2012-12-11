@@ -2,30 +2,24 @@
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span6">
-				<div class="newgames">
-					<h3>New Games</h3>
-					<ul>
-						<li>Game1</li>
-						<li>Game2</li>
-						<li>Game3</li>
-						<li>Game4</li>
-						<li>Game5</li>
-						<li>Game6</li>
-						<li>Game7</li>
-						<li>Game8</li>
+				<h3>New Games</h3>
+				<% if @games.any? %>
+					<ul class = "newgames">	
+					<% @games.reverse[0..11].each do |game| %>
+						<%= render :partial => "categories/gamelist", :locals => {:game => game} %>
+					<% end %>
 					</ul>
-				</div>
+				<% end %>
 			</div>
 			<div class="span3">
-				<div class="populargames">
-					<h3>Popular Games</h3>
-					<ul>
-						<li>Game1</li>
-						<li>Game2</li>
-						<li>Game3</li>
-						<li>Game4</li>
+				<h3>Popular Games</h3>
+				<% if @games.any? %>
+					<ul class = "popgames">	
+					<% @games[0..5].each do |game| %>
+						<%= render :partial => "categories/gamelist", :locals => {:game => game} %>
+					<% end %>
 					</ul>
-				</div>
+				<% end %>
 			</div>
 			<div class="span3">
 				<h3>Top Players</h3>

@@ -1,9 +1,11 @@
-<h1>Listing games</h1>
+<h2>All Games</h2>
 
-<table>
-<% @games.each do |game| %>
-  <tr>
-    <td><%= game.name %></td>
+<% if @games.any? %>
+	<ul class = "gamelist">	
+	<% @games.each do |game| %>
+		<%= render :partial => "categories/gamelist", :locals => {:game => game} %>
+	<% end %>
+	</ul>
+	<%= will_paginate @games %>
 <% end %>
-</table>
 
