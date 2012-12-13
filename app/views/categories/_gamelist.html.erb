@@ -4,8 +4,6 @@
 	</div>
 	<div class="li-text">
 		<h4 class="li-head"><%= link_to game.name, Game.find_by_name(game.name) %></h4>
-		Plays:
-		<br />
-		Rating:
+		Rating: <%= game.rate_average.to_s.sub(".0","") %>/5
 	</div>
 </li>

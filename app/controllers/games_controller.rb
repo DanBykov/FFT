@@ -22,4 +22,12 @@ class GamesController < ApplicationController
       format.json { render json: @game }
     end
   end
+  
+  def rate
+    @game = Game.find(params[:id])
+    @game.rate(params[:stars], current_user, params[:dimension])
+    respond_to do |format|
+      format.js
+    end
+  end
 end

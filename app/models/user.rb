@@ -13,5 +13,8 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :username
   
   has_many :comments
+  
   has_many :games, :through => :comments
+  
+  ajaxful_rater
 end
