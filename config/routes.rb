@@ -1,11 +1,14 @@
 Fft::Application.routes.draw do
 
   devise_for :users
+  resources :users, only: [:index, :destroy]
+
   resources :games do
     member do
       post :rate
     end
   end
+  
   resources :categories
   resources :comments, only: [:create, :destroy]
   

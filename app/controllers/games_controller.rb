@@ -15,7 +15,7 @@ class GamesController < ApplicationController
   def show
     @game = Game.find(params[:id])
     @games = Game.all
-    @comment = current_user.comments.build 
+    @comment = current_user.comments.build if current_user
     @comments = @game.comments.paginate(page: params[:page], per_page: 8)
     respond_to do |format|
       format.html # show.html.erb
@@ -28,6 +28,13 @@ class GamesController < ApplicationController
     @game.rate(params[:stars], current_user, params[:dimension])
     respond_to do |format|
       format.js
+    end
+  end
+
+  def update
+    @game = Game.find(params[:id])
+    if @game.update_attributes(params[:game])
+        redirect_to @game
     end
   end
 end

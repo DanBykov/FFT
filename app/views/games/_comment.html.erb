@@ -1,6 +1,9 @@
 <li>
 	<div class="timestamp">
 		<%= comment.user.username %> posted <%= time_ago_in_words(comment.created_at) %> ago.
+		<% if current_user.admin?  %>
+			| <%= link_to "delete", comment, method: :delete %>
+		<% end %>
 	</div>
 	<div class="content">
 		<%= comment.content %>

@@ -12,9 +12,9 @@ class User < ActiveRecord::Base
   validates_presence_of :username
   validates_uniqueness_of :username
   
-  has_many :comments
+  has_many :comments, dependent: :destroy
   
-  has_many :games, :through => :comments
+  has_many :games, through:  :comments
   
-  ajaxful_rater
+  ajaxful_rater dependent:  :destroy
 end

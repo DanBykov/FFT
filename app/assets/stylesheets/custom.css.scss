@@ -152,6 +152,7 @@ footer {
   vertical-align: top;
   text-align: left;
   padding-left: 5px;
+  padding-right: 20px;
 }
 
 .li-head {
@@ -165,12 +166,14 @@ footer {
 .comments {
   list-style: none;
   margin-top: 20px;
+  margin-left: 0;
+  padding-left: 0;
   li {
     padding: 8px;
     margin-bottom: 3px;
-    background-color: #F0FFFF;
+    background-color: #F7F7F7;
     &:hover {
-       background-color: #E0EEEE;
+       background-color: #E7E7E7;
     }
   }
 }
@@ -247,4 +250,22 @@ footer {
 }
 .instructions {
   margin-bottom: 10px;
+}
+
+/* Users */
+
+.userlist {
+  list-style: none;
+}
+
+/* Game */
+
+.game {
+  padding-bottom: 20px;
+}
+
+/* Gameinfo */
+
+.admingameinfo {
+  padding-top: 30px;
 }

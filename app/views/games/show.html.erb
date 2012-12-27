@@ -1,34 +1,39 @@
 <div class="row-fluid">
 	<div class="span2">
 	</div>
-	<div class="span8 offset4">
-		<embed src="<%= asset_path(@game.name + '.swf') %>", width = "640px", height = "480px"/>
+	<div class="span8 game">
+		<embed src="<%= asset_path(@game.name + '.swf') %>", width = "640px", height = "480px">
 	</div>
 </div>
-<br /><br /><br />
-<div class="row-fluid">
-	<div class="span6">
-		<h2>Feedback</h2>
-		<section>
-        	<%= render 'shared/comment_form' %>
-    	</section>
-    	<% if @game.comments.any? %>
-			<ul class="comments">
-				<% @comments.each do |comment| %>
-					<%= render :partial => "games/comment", :locals => {:comment => comment} %>
-				<% end %>
-			</ul>
-			<%= will_paginate @comments %>
-		<% end %>
+<% if user_signed_in?  %>
+	<div class="row-fluid">
+		<div class="span6">
+			<h2>Feedback</h2>
+			<section>
+						<%= render 'shared/comment_form' %>
+				</section>
+				<% if @game.comments.any? %>
+				<ul class="comments">
+					<% @comments.each do |comment| %>
+						<%= render :partial => "games/comment", :locals => {:comment => comment} %>
+					<% end %>
+				</ul>
+				<%= will_paginate @comments %>
+			<% end %>
+		</div>
+		<div class="span6">
+			<h2>Game Info</h2>
+			<h3>Description</h3>
+			<div class="description"><%= @game.description %></div>
+			<h3>Instructions</h3>
+			<div class="instructions"><%= @game.instructions %></div>
+			<h2>Rating</h2>
+			Your rating: <%= ratings_for @game, :show_user_rating => true %> Overall rating: <%= ratings_for @game, :static %>
+		</div>
 	</div>
-	<div class="span6">
-		<h2>Game Info</h2>
-		<h3>Description</h3>
-		<div class="description"><%= @game.description %></div>
-		<h3>Instructions</h3>
-		<div class="instructions"><%= @game.instructions %></div>
-		<h2>Rating</h2>
-		Your rating: <%= ratings_for @game, :show_user_rating => true %> Overall rating: <%= ratings_for @game, :static %>
-	</div>
-</div>
-
+<% if current_user.try(:admin?) %>
+	<%= render "games/admingameinfo" %>
+<% end %>
+<% else %>
+	You must be  <%= link_to "Logged in", new_user_session_path %> to post a comment, view game info and rating.
+<% end %>

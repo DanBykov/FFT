@@ -1,0 +1,12 @@
+<% if current_user.admin? %>
+<h2>All Users</h2>
+<ul class="userlist">
+	<% @users.each do |u| %>
+		<li>
+			Username = <%= u.username %> | Email = <%= u.email %> | <%= link_to "delete", u, method: :delete %>
+		</li>
+	<% end %>
+</ul>
+<% end %>
+
+

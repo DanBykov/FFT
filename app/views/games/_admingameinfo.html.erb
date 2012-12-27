@@ -1,0 +1,17 @@
+<div class="admingameinfo">
+	<%= form_for(@game) do |f|%>
+		<div class="field">
+			<%= f.text_area :description, url: { action: "update" }, html: { method: 'put' } , placeholder: "Add description", size: "20x3" %>
+		</div>
+		<%= f.submit "Submit description", class: "btn pull-right" %>
+	<% end %>
+</div>
+
+<div class="admingameinfo">
+	<%= form_for(@game) do |f|%>
+		<div class="field">
+			<%= f.text_area :instructions, url: { action: "update" }, html: { method: 'put' }, placeholder: "Add instructions", size: "20x3" %>
+		</div>
+		<%= f.submit "Submit instructions", class: "btn pull-right" %>
+	<% end %>
+</div>

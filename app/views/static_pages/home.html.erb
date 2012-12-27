@@ -15,7 +15,7 @@
 				<h3>Popular Games</h3>
 				<% if @games.any? %>
 					<ul class = "popgames">	
-					<% @games[0..5].each do |game| %>
+					<% @games.sort_by{|g|g.rate_average}.reverse[0..5].each do |game| %>
 						<%= render :partial => "categories/gamelist", :locals => {:game => game} %>
 					<% end %>
 					</ul>

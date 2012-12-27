@@ -1,5 +1,5 @@
 class Game < ActiveRecord::Base
-  attr_accessible :name
+  attr_accessible :name, :instructions, :description
   
   belongs_to :category
   
