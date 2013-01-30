@@ -1,4 +1,12 @@
+/* Bootswatch themes: Amelia, Cerulean, Cosmo, Cyborg, Journal, Readable, Simplex, Slate, Spacelab, Spruce, Superhero, United. */
+
+/* @import "bootswatch/cerulean/variables"; */
+
 @import "bootstrap";
+
+/* @import "bootswatch/cerulean/bootswatch"; */
+
+
 
 /* mixins, variables, etc. */
 
@@ -11,7 +19,7 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 section {
@@ -112,8 +120,12 @@ footer {
   .navbar-inner {
       padding-left: 120px;
   }
-
 }
+
+.button_to {
+  margin: 0;
+}
+
 /* gamelist */
 
 .gamelist {

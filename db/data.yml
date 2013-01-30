@@ -1,0 +1,645 @@
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  - username
+  - admin
+  records: 
+  - - 3
+    - dan.bykov@gmail.com
+    - $2a$10$h7DKx1mrXsFw69B9YewNF.j73OOR8YScBjaIAymwgUYNsj2SpiDz.
+    - 
+    - 
+    - '2012-12-27 18:12:39.411733'
+    - 48
+    - '2013-01-10 16:45:35.624139'
+    - '2013-01-10 16:41:14.524443'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2012-10-24 20:12:22.752470'
+    - '2013-01-10 16:45:35.625009'
+    - Dan
+    - true
+
+---
+games:
+  columns:
+  - id
+  - name
+  - category_id
+  - created_at
+  - updated_at
+  - description
+  - instructions
+  records: 
+  - - 2
+    - Argent-Burst
+    - 5
+    - '2012-10-25 18:50:26.407785'
+    - '2012-12-25 11:42:30.070847'
+    - Starts off simple, becomes pretty later. Destroy enemy lines by catching the
+      ends in the explosions. Similar to Missile Command if you were alive in the
+      1980's, which I doubt most of you were but you can take credit for anyway. Play
+      and enjoy :)
+    - Mouse to move and shoot, 1-3 keys to select turret.
+  - - 3
+    - Four-Second-Frenzy
+    - 5
+    - '2012-10-25 18:53:24.242345'
+    - '2012-12-13 21:18:21.609645'
+    - 50 microgames in 4 seconds or less! Created by 26 developers from around the
+      world, this Wariowares-esque game challenges quick and critical thinking. Enjoy!
+    - Arrow keys and space bar, watch for instructions before each microgame!
+  - - 4
+    - Angry-Old-Wizard
+    - 5
+    - '2012-11-27 17:37:52.689671'
+    - '2012-12-13 21:19:38.845768'
+    - Help Gandalf survive the horde of attacking Wraiths!
+    - ! 'Arrow Keys to move.
+
+      A: Attack
+
+      S: Jump'
+  - - 5
+    - Chaos-Faction
+    - 5
+    - '2012-11-27 17:38:59.901718'
+    - '2012-12-13 21:22:30.393969'
+    - ! '29 weapons, 18 characters, 15 levels, 14 months in the making... this is
+      Dissolute Production''s biggest project yet! Check out the official site: www.chaosfaction.com'
+    - Up = jump, Down = block. Z = attack1, X = attack2
+  - - 6
+    - Dark-Cut-2
+    - 5
+    - '2012-11-27 18:17:05.825277'
+    - '2012-12-13 21:24:18.111220'
+    - ! 'Fall into the thick of the Civil War, and perform three surgeries on some
+      of the worst wounds imaginable!
+
+
+'
+    - Mouse, as prompted
+  - - 7
+    - Dark-Cut
+    - 5
+    - '2012-11-27 18:17:30.003845'
+    - '2012-12-13 21:25:31.100184'
+    - Cut people open using surgical tools of the Middle Ages! Heal them, following
+      close instructions and using practical medical sense. Enjoy!
+    - Follow the onscreen instructions for more info!
+  - - 8
+    - Died-Hard
+    - 5
+    - '2012-11-27 18:17:39.212136'
+    - '2012-12-13 21:28:17.854574'
+    - ! 'Fast paced ''Smash TV'' style Zombie Fragfest.
+
+      Traverse as many floors of ''Necrotomi Plaza'' as you can, taking on hordes
+      of Flesh eating, but otherwise harmless Zombies!'
+    - Mouse Aiming / WASD Movement
+  - - 9
+    - Five-Til
+    - 5
+    - '2012-11-27 18:17:49.463367'
+    - '2012-12-13 21:29:42.994852'
+    - Several minigames leading up to defusing the bomb! Good luck!
+    - Follow the on-screen instructions per game.
+  - - 10
+    - Four-Second-Fury
+    - 5
+    - '2012-11-27 18:18:00.093377'
+    - '2012-12-13 21:30:37.499842'
+    - 20 microgames in 4 seconds or less! Jump, run, whatever you need to survive
+    - Follow the on screen instructions.
+  - - 11
+    - Indestruc2tank
+    - 5
+    - '2012-11-27 18:18:12.017715'
+    - '2012-12-13 21:31:58.672328'
+    - Ready for some more Indestructo-Fun? Back for even more blasts, take on the
+      Role of IndestructoTank pilot Dirk Danger and play through all new game modes!
+    - Mouse for menu's.  Arrow keys during gameplay.  Spacebar to pause.
+  - - 12
+    - Indestructotank
+    - 5
+    - '2012-11-27 18:18:22.659383'
+    - '2012-12-13 21:33:19.798319'
+    - As the pilot of an indestructable tank, you have certain responsibilities -
+      Kicking Butt! Use the enemies weapons against them as you catapult yourself
+      through the air and destroy the enemy air force!
+    - Mouse browsed menu's. Arrow keys during gameplay. P key to pause.
+  - - 13
+    - Parachute-Retrospect
+    - 5
+    - '2012-11-27 18:18:32.098446'
+    - '2012-12-13 21:34:17.702000'
+    - Drop little men into the cart below, while avoiding more spikes, lasers, and
+      saws! Final boss to pair!
+    - Space bar to drop, arrow keys to move.
+  - - 15
+    - Santastic-Santa
+    - 5
+    - '2012-11-27 18:21:20.852870'
+    - '2012-12-13 21:35:19.767052'
+    - Rock Solid Christmas Themed Retro Platformer!
+    - A/S - Dash/Jump (can be switched). Arrow Keys - Move. Space bar - Pause.
+  - - 16
+    - S.T.A.R.-Defence
+    - 5
+    - '2012-11-27 18:21:36.167478'
+    - '2012-12-13 21:36:48.252926'
+    - Defend your planet with strategic turret placement!
+    - Mouse to Aim and Fire. Z,X,C,V to place satellites. Space to Pause.
+  - - 17
+    - The-Last-Stand
+    - 5
+    - '2012-11-27 18:21:45.670062'
+    - '2012-12-13 21:39:14.549648'
+    - Survive the night fighting off zombies from your barricade.
+    - Use W,A,S,D to move. Mouse to aim & fire. Space to switch weapons. R to reload.  ESC
+      to open options & pause.
+  - - 18
+    - The-Mind-Bender
+    - 5
+    - '2012-11-27 18:21:52.685333'
+    - '2012-12-13 21:40:03.800637'
+    - Move crates with your telekinesis powers to move through obstacles and finish
+      the course of 20 levels in this puzzle platformer!
+    - Arrow/WAD keys to move, click and drag crates.
+  - - 19
+    - Who-Stole-My-Medicin
+    - 5
+    - '2012-11-27 18:22:03.412748'
+    - '2012-12-13 21:40:59.514907'
+    - ! 'A point and click game that will challenge your reflexes! Find the person
+      who stole your medicine before your time runs out.
+
+
+'
+    - ! 'Mouse: Point and Click.'
+  - - 20
+    - Sea-of-Fire
+    - 12
+    - '2012-12-24 14:18:51.318174'
+    - '2012-12-25 12:09:49.032761'
+    - Pick a side, build units, conquer land. Can you control all of the Worlds resources?
+    - Mouse to build and choose units.
+  - - 21
+    - Luminara
+    - 10
+    - '2012-12-24 14:39:50.148640'
+    - '2012-12-25 12:07:41.241535'
+    - Guide your player through 50 waves of colorful enemies and explosions. Each
+      level features tougher challenges and enemies to face. Use different power ups
+      like lasers and companion players to clean up harder levels. Hope you enjoy!
+      -John (jmtb02)
+    - Arrow Keys
+  - - 22
+    - Indestructo-Copter
+    - 10
+    - '2012-12-24 14:41:43.756291'
+    - '2012-12-25 12:08:36.469792'
+    - Take the Destiny of your country into your hands as you fight to protect its
+      citizens from the Enemy Air Force. Backup Dirk Danger in a story that runs parallel
+      to the events of IndestrucTank!
+    - ! "Mouse - Aim/Fire\r\nShift and Click - Launch E.M.P. wave\r\nP - Pause Game"
+  - - 23
+    - Armor-Trigger
+    - 10
+    - '2012-12-24 14:42:01.429308'
+    - '2012-12-25 12:08:56.683974'
+    - A compilation of shooting games that will keep you on the edge of your seat.
+    - Use mouse to shoot.
+  - - 24
+    - Achievement-Unlocked
+    - 9
+    - '2012-12-24 14:42:43.637899'
+    - '2012-12-25 12:00:06.154879'
+    - Who needs gameplay when you have ACHIEVEMENTS? Don't worry about beating levels,
+      finding ways to kill enemies, or beating the final boss... there are none. Focus
+      solely on your ultimate destiny... doing random tasks that have nothing to do
+      with anything. Metagame yourself with ease! Self-satisfaction never felt so...
+      artificial!
+    - Use the arrow keys... if you dare.
+  - - 25
+    - Ball-Revamped-3-Andromeda
+    - 9
+    - '2012-12-24 14:43:30.891633'
+    - '2012-12-25 12:00:31.312409'
+    - Fight gravity, in the third sequel (part 1) of the Ball Revamped series!
+    - Navigate the ball to the goal, by tapping the up key to keep it suspended, left
+      and right keys to move, well, left and right.
+  - - 26
+    - Ball-Revamped-3-Gemini
+    - 9
+    - '2012-12-24 14:43:41.836210'
+    - '2012-12-25 12:00:54.113646'
+    - Part 2 of the Ball Revamped 3 game!
+    - Navigate the ball to the goal, by tapping the up key to keep it suspended, left
+      and right keys to move, well, left and right.
+  - - 27
+    - Ball-Revamped-4-Amplitude
+    - 9
+    - '2012-12-24 14:43:52.939447'
+    - '2012-12-25 12:01:17.758122'
+    - ! "Four months was spent on this installation of the Ball Revamped series, this
+      time with a 100 new levels, 20 power ups, 8 different obstacles, 2 bosses, level
+      codes, and a high score list. Bringing it back to the old style of gameplay,
+      Ball Revamped IV: Amplitude is definitely a notch above the others in the series.
+      I hope you enjoy.\r\n"
+    - Use the arrow keys to move.
+  - - 28
+    - Ball-Revamped-5-Synergy
+    - 9
+    - '2012-12-24 14:44:04.416397'
+    - '2012-12-25 12:01:38.657374'
+    - ! 'Ball Revamped Five: Synergy takes the Ball Revamped formula in a new direction,
+      with evolving power ups and branched gameplay. The game took 8 months of production
+      time in conjunction with over a year of planning.\r\n\r\nAlthough you''ll only
+      play 50 levels at a time in this version, the game has several hubs that allow
+      you to explore new worlds based on your performance and skill. The game has
+      12 possible routes to the final boss, so it''s not just a linear game.\r\n\r\nIncluded
+      is a built -in level editor, so you can swap levels with friends, rate each
+      other''s levels, and go for the unique high scores for each level you make!'
+    - Use the arrow keys to move.
+  - - 29
+    - Ball-Revamped-Metaphysik
+    - 9
+    - '2012-12-24 14:44:20.453554'
+    - '2012-12-25 12:02:13.336697'
+    - The sequel to the original Ball Revamped, move the ball around the screen, while
+      fighting gravity and enemies.
+    - Navigate the ball to the goal, by tapping the up key to keep it suspended, left
+      and right keys to move, well, left and right.
+  - - 30
+    - Ball-Revamped
+    - 9
+    - '2012-12-24 14:44:29.802050'
+    - '2012-12-25 12:03:05.259206'
+    - Guide your ball through perplexing levels, using power ups to aid you along
+      the way. 100 levels, obstacles and themed worlds will keep you going until the
+      end! This is the original, so expect quirkiness for it's age!
+    - Arrow Keys to move.
+  - - 31
+    - Be-the-Santa
+    - 9
+    - '2012-12-24 14:44:39.749046'
+    - '2012-12-25 12:03:35.054432'
+    - As Santa, deliver presents and eat cookies while trying to be as quiet and careful
+      as possible!
+    - ! "W,S,A,D or Arrow Keys to move.\r\nMove + Shift button to run.\r\nM to mute."
+  - - 32
+    - Cattle-Pult
+    - 9
+    - '2012-12-24 14:44:48.040178'
+    - '2012-12-25 12:04:02.269386'
+    - Use your launching pad to Pult Cattle into the delicate China! The green bumpers
+      can be adjusted to direct the Bull in other directions.
+    - ! "Mouse to adjust the strength and direction of the Bull.\r\n\r\nClick on the
+      'Green Bumpers' to change the direction of the arrow."
+  - - 33
+    - ClusteRobot
+    - 9
+    - '2012-12-24 14:44:56.725044'
+    - '2012-12-25 12:04:29.591825'
+    - ! "What happens when the Color Match and Mouse Avoider genre collide? - ClusteRoboT!\r\nUse
+      your mouse to help ClusteRoboT gather like colored gems into giant combo clusters
+      in this addictive skill game for the whole family!*\r\n\r\n*Except that Aunt
+      who smells funny...\r\n"
+    - Mouse controls everything!
+  - - 34
+    - Coffee-Shop
+    - 9
+    - '2012-12-24 14:45:04.516786'
+    - '2012-12-25 12:05:00.037091'
+    - ! "Run your own Coffee Shop! You have a limited # of days, so make sure to maximize
+      cash, save inventory, and if you reputation gets high enough you might even
+      get a visit from a special guest. :D\r\n\r\nCan you become the next Starbucks?"
+    - Mouse to buy inventory and adjust recipe.
+  - - 35
+    - Grid16
+    - 9
+    - '2012-12-24 14:45:16.281533'
+    - '2012-12-25 12:05:21.206837'
+    - Tons of small games, each getting harder and harder as time speeds up. Survive
+      as long as you can in the grid. If you liked Four Second Fury or any of the
+      other games you'll like this one :).
+    - Arrow Keys to perform in all the games. You must use your instincts to beat
+      each of the games... think about how you beat other games!
+  - - 36
+    - Portal-the-Flash-Version
+    - 9
+    - '2012-12-24 14:45:24.642802'
+    - '2012-12-25 12:05:43.710787'
+    - ! 'Portal: The Flash Version includes over 40 challenging, portals thinking
+      levels, which features almost every feature the real game does, in 2d - energy
+      balls, cubes, turrets and even the famous crusher from the trailer. The game
+      also includes a console to mess around with after finishing the game, or just
+      being frustrated by thinking with portals!'
+    - ! "Left mouse button - launch a portal.\r\nA W D - movement\r\nQ - launch a
+      blue portal.\r\nE - launch a yellow portal.\r\nR - Close both portals.\r\nF
+      - pick up an object.\r\n~ - open up console (enable through the options)\r\nO
+      - quick quality adjust.\r\nEsc/P - pause game."
+  - - 37
+    - Snowball-Joe
+    - 9
+    - '2012-12-24 14:45:34.384860'
+    - '2012-12-25 12:06:09.647885'
+    - ! "Roll the titular hero around multiple levels of platforming action, collect
+      snowflakes, trophies, and kickk snowman butt!\r\n"
+    - Arrow Keys to roll, A to jump.
+  - - 38
+    - Stacks
+    - 9
+    - '2012-12-24 14:45:42.430351'
+    - '2012-12-25 12:06:34.500807'
+    - A competitive game of timing reccommended for 2 players, or by yourself against
+      the computer AI. Can you knock your opponents block off?
+    - ! "Player 1 fire - A key\r\nPlayer 2 fire - L key"
+  - - 39
+    - Tba
+    - 9
+    - '2012-12-24 14:45:53.293998'
+    - '2012-12-25 12:07:04.459893'
+    - Shoot from cannon to cannon in this rapid fire puzzle/skill game!
+    - Space bar to launch, right-click for additional options
+  - - 40
+    - Color-Keys
+    - 7
+    - '2012-12-24 14:46:43.177929'
+    - '2012-12-25 11:53:36.955843'
+    - ! "Button mashing has never been so much fun. I made this in an hour to drown
+      the sorrows of Finals week.\r\n"
+    - 1) Mash your keyboard. 2) Giggle.
+  - - 41
+    - James-the-Beach-Zebra
+    - 7
+    - '2012-12-24 14:47:02.974164'
+    - '2012-12-25 11:54:55.014710'
+    - Bored of the cold British winter, James has decided to head to a tropical beach!
+      Surf, dig a giant hole and play volleyball in this collection of three games,
+      each with hiscores to beat.
+    - Arrow keys - see individual in-game instructions for details
+  - - 42
+    - James-the-Christmas-Zebra
+    - 7
+    - '2012-12-24 14:47:13.793205'
+    - '2012-12-25 11:55:17.613919'
+    - An early Christmas present to you all, introducing James the zebra! Swing from
+      cloud to cloud eating cookies and avoiding explosive puddings in this addictive
+      game. Two bonus modes are unlocked after you play the main game, and stay unlocked
+      forever more!
+    - Left and right to move, up to jump, up again to swing and again to let go
+  - - 43
+    - James-the-Circus-Zebra
+    - 7
+    - '2012-12-24 14:47:23.308903'
+    - '2012-12-25 11:55:37.772742'
+    - Fly through the air across tightropes, trampolines and trapezes as James the
+      Zebra takes to the big top! Two minigames can be unlocked after completing the
+      main game once and stay unlocked. Compete for the best online hi-scores!
+    - Left and right to move, up to jump
+  - - 44
+    - James-the-Deep-Sea-Zebra
+    - 7
+    - '2012-12-24 14:47:34.854099'
+    - '2012-12-25 11:56:04.015963'
+    - Take a relaxing dip in the ocean with James the Deep Sea Zebra. Look out though,
+      something's lurking down there...
+    - ! "Left and right to move\r\nUp Arrow Key to swim up"
+  - - 45
+    - James-the-Space-Zebra
+    - 7
+    - '2012-12-24 14:47:45.126200'
+    - '2012-12-25 11:56:21.216069'
+    - Fly James around the moon, aiding important physics reasearch by collecting
+      the adorable Dark Matter. As ever, two bonus minigames are included!
+    - Left and right to move, up to jump, up again to hover
+  - - 46
+    - Knights-of-Rock
+    - 7
+    - '2012-12-24 14:47:54.666014'
+    - '2012-12-25 11:56:53.773777'
+    - A rhythm game with some bite, Knights of Rock is a music-based game accompanied
+      by animation, featuring a DDR-style gameplay. The game is difficult, so it may
+      take a few shots to get through. Standalone animation available later! Thanks
+      to Kenney for some menu/graphics help.
+    - Arrow Keys
+  - - 47
+    - Ocean-Explorer
+    - 7
+    - '2012-12-24 14:48:06.271033'
+    - '2012-12-25 11:57:16.998597'
+    - Explore the ocean by taking pictures of colorful reef fish! Score points by
+      taking better pictures of bigger and brighter marine life, as you make your
+      way through the ocean. Make sure to read the instructions before playing!
+    - Mouse and arrow keys.
+  - - 48
+    - Ongaku
+    - 7
+    - '2012-12-24 14:48:14.859358'
+    - '2012-12-25 11:57:45.894492'
+    - ! "Paint with your music in Rhythm Action Adventure! Winner of the Armor Games
+      Rockout Competition 2007.\r\nJoin Onhaku as he battles against the evil Dischord!"
+    - W and S control Ongaku's Height, Arrow Keys control the type of note he displays.
+  - - 49
+    - Scribble-2
+    - 7
+    - '2012-12-24 14:48:23.860115'
+    - '2012-12-25 11:58:10.467265'
+    - Draw from dot-to-dot, in this fast-paced sequel!
+    - Mouse to move
+  - - 50
+    - Scribble-States
+    - 7
+    - '2012-12-24 14:48:31.481446'
+    - '2012-12-25 11:58:45.606568'
+    - Know your USA geography? Then prove it in this drawing/quiz game!
+    - Mouse to move and draw
+  - - 51
+    - Scribble
+    - 7
+    - '2012-12-24 14:48:41.923575'
+    - '2012-12-25 11:59:07.807138'
+    - Draw with your crayon from dot-to-dot, and relive those precious kindergarten
+      days!
+    - Mouse to draw
+  - - 52
+    - Virtual-Pet-Reindeer
+    - 7
+    - '2012-12-24 14:48:50.383540'
+    - '2012-12-25 11:59:35.190847'
+    - Look after Gerald the cute little Reindeer in this Cyber pet/ Maze game.
+    - Mouse controls
+  - - 53
+    - Super-Mafia-Land
+    - 6
+    - '2012-12-24 14:52:21.964661'
+    - '2012-12-25 11:49:54.537202'
+    - ! "Make your way across a strange and mysterious land as you try to find the
+      meaning of why things are just so darn mysterious. Use your amazing jumping,
+      running, and puzzle-solving abilities and find out why... just why... the mafia
+      is involved.\r\n\r\nInspired by our favourite game of all time. See if you can
+      figure it out :).\r\n\r\nBy BoMToons and jmtb02, Developed by Armor Games. Music
+      by Kevin Macleod and others, see the credits.\r\n"
+    - Arrow keys to move. A key to run and pick up/throw. Up key to climb and jump.
+      Down key to power jump
+  - - 54
+    - Sonny
+    - 6
+    - '2012-12-24 14:52:30.949648'
+    - '2012-12-25 11:50:30.139291'
+    - ! "Dear Human,\r\n\r\nZombies. You've shot them, stabbed them, sliced and diced
+      them. Today I put you in the shoes of a Zombie. Fight for your life in this
+      crazy and twisted world.\r\n\r\nAfter two solid months of production, we present
+      to you this epic interactive tale of Sonny. I hope you like it!"
+    - Use the mouse. As simple as that!
+  - - 55
+    - Sleepless-Knight
+    - 6
+    - '2012-12-24 14:52:39.667451'
+    - '2012-12-25 11:51:14.470556'
+    - Follow Knight Lucy in her dangerous quest to rescue a kidnapped princess in
+      this platforming adventure game.
+    - ! "Arrow Keys - Move\r\nA and S - Jump and attack\r\nSpace - Brings up shop
+      menu."
+  - - 56
+    - Sleepless-Knight-2
+    - 6
+    - '2012-12-24 14:53:01.164918'
+    - '2012-12-25 11:51:38.284201'
+    - ! "Rejoin Lucy as she fights for a new cause: Revenge. Can she get back at those
+      who tried to kill her?\r\n"
+    - ! "Arrow Keys - Move\r\nA and S - Jump and Attack\r\nSpace - Bring up Shop Menu"
+  - - 57
+    - Sinjid-Shadow-of-the-Warrior
+    - 6
+    - '2012-12-24 14:53:13.359749'
+    - '2012-12-25 11:52:01.546448'
+    - ! 'An addictive ninja RPG: Build your character and battle powerful enemies!'
+    - ! "Arrow Keys: Movement\r\nSpace bar: Talk / Enter Door\r\nMouse: Everything
+      else!"
+  - - 58
+    - Sinjid-Battle-Arena
+    - 6
+    - '2012-12-24 14:53:21.813950'
+    - '2012-12-25 11:52:26.842327'
+    - The first ever Sinjid game! An action RPG where you develop your character and
+      fight monsters through a portal!
+    - ! "Arrow Keys: Movement\r\nSpace Bar: Interact\r\nMouse: Everything else!\r\n\r\n(You
+      can also use the Num Pad as hotkeys for your abilities)"
+  - - 59
+    - Fancy-Pants-Adventure
+    - 6
+    - '2012-12-24 14:53:30.666249'
+    - '2012-12-25 11:53:13.800982'
+    - Run Fast, Run Fancy.
+    - ! "Left and Right Arrows: move\r\nDown Arrow: duck / roll\r\nUp Arrow: enter
+      door\r\nS Key: jump"
+
+---
+categories:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - 5
+    - Action
+    - '2012-10-25 18:30:03.764706'
+    - '2012-10-25 18:30:03.764706'
+  - - 6
+    - Adventure
+    - '2012-10-25 18:30:14.578618'
+    - '2012-10-25 18:30:14.578618'
+  - - 7
+    - Misc
+    - '2012-10-25 18:30:19.600655'
+    - '2012-10-25 18:30:19.600655'
+  - - 8
+    - Music
+    - '2012-10-25 18:30:22.839581'
+    - '2012-10-25 18:30:22.839581'
+  - - 9
+    - Puzzle
+    - '2012-10-25 18:30:27.756441'
+    - '2012-10-25 18:30:27.756441'
+  - - 10
+    - Shooting
+    - '2012-10-25 18:30:33.860006'
+    - '2012-10-25 18:30:33.860006'
+  - - 11
+    - Sports
+    - '2012-10-25 18:30:42.717038'
+    - '2012-10-25 18:30:42.717038'
+  - - 12
+    - Strategy
+    - '2012-10-25 18:30:50.580466'
+    - '2012-10-25 18:30:50.580466'
+
+---
+comments:
+  columns:
+  - id
+  - content
+  - user_id
+  - game_id
+  - created_at
+  - updated_at
+  records: 
+  - - 5
+    - '1'
+    - 3
+    - 18
+    - '2012-12-04 21:01:36.472649'
+    - '2012-12-04 21:01:36.472649'
+  - - 50
+    - '1'
+    - 3
+    - 2
+    - '2012-12-25 10:31:16.703728'
+    - '2012-12-25 10:31:16.703728'
+
+---
+rates:
+  columns:
+  - id
+  - rater_id
+  - rateable_id
+  - rateable_type
+  - stars
+  - dimension
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 3
+    - 2
+    - Game
+    - 3
+    - 
+    - '2012-12-13 17:44:47.891993'
+    - '2012-12-20 16:53:45.205403'
+  - - 4
+    - 3
+    - 19
+    - Game
+    - 2
+    - 
+    - '2012-12-20 16:53:16.856830'
+    - '2012-12-20 16:53:20.618817'

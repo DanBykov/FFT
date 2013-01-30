@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121213163744688) do
+ActiveRecord::Schema.define(:version => 20121220174341) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -21,22 +21,6 @@ ActiveRecord::Schema.define(:version => 20121213163744688) do
 
   create_table "comments", :force => true do |t|
     t.string   "content"
-    t.integer  "user_id"
-    t.integer  "game_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "game_ratings", :force => true do |t|
-    t.integer  "value"
-    t.integer  "game_id"
-    t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "gameratings", :force => true do |t|
-    t.integer  "value"
     t.integer  "user_id"
     t.integer  "game_id"
     t.datetime "created_at", :null => false
@@ -65,21 +49,9 @@ ActiveRecord::Schema.define(:version => 20121213163744688) do
   add_index "rates", ["rateable_id", "rateable_type"], :name => "index_rates_on_rateable_id_and_rateable_type"
   add_index "rates", ["rater_id"], :name => "index_rates_on_rater_id"
 
-  create_table "rating_caches", :force => true do |t|
-    t.integer  "cacheable_id"
-    t.string   "cacheable_type"
-    t.float    "avg",            :null => false
-    t.integer  "qty",            :null => false
-    t.string   "dimension"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
-  add_index "rating_caches", ["cacheable_id", "cacheable_type"], :name => "index_rating_caches_on_cacheable_id_and_cacheable_type"
-
   create_table "users", :force => true do |t|
-    t.string   "email",                  :default => "", :null => false
-    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "email",                  :default => "",    :null => false
+    t.string   "encrypted_password",     :default => "",    :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -88,10 +60,10 @@ ActiveRecord::Schema.define(:version => 20121213163744688) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at",                             :null => false
-    t.datetime "updated_at",                             :null => false
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
     t.string   "username"
-    t.boolean  "admin"
+    t.boolean  "admin",                  :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
