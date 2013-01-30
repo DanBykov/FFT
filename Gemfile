@@ -10,6 +10,7 @@ gem 'yaml_db'
 gem 'capistrano'
 gem 'unicorn'
 gem 'bootswatch-rails'
+gem 'therubyracer'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
