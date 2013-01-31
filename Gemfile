@@ -11,6 +11,7 @@ gem 'capistrano'
 gem 'unicorn'
 gem 'bootswatch-rails'
 gem 'therubyracer'
+gem 'rake'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
